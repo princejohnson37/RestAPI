@@ -4,7 +4,7 @@ const port = 3000;
 const studentRoutes = require("./src/student/routes");
 
 //middleware
-// app.use(express.json());
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Helo world");
